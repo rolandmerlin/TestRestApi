@@ -22,3 +22,6 @@ button.btn--secondary {
 input {
     @apply border-b-2 border-solid border-gray-200 outline-none;
 }
+body {
+    @apply bg-white text-gray-700;
+}
