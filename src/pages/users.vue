@@ -131,8 +131,7 @@ function SaveNewUser(){
 
 /* Suppresion d'uilisateur */
 function DeleteUser(u){
-    let deleteUserId = u.id
-    if(window.confirm('Voulez-vous supprimer l\'utilisateur "'+u.name+'" ?\n [OK] pour comfimer / Sinon [Annuler] ')) ExecDeleteUser(deleteUserId)
+    if(window.confirm('Voulez-vous supprimer l\'utilisateur "'+u.name+'" ?\n [OK] pour comfimer / Sinon [Annuler] ')) ExecDeleteUser(u.id)
 }
 function ExecDeleteUser(id){
     axios.delete(url+id).then(d => {
